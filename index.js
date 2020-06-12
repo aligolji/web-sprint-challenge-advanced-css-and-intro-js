@@ -216,9 +216,9 @@ console.log('task 1-2', artists[2]);
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-function changeName(array, index, name){
-    array[index].name = name;
-    return array;
+function changeName(arr, index, name){
+    arr[index].name = name;
+    return arr;
 }
 
 console.log('task 2',changeName(artists, 8, 'Vincent Van Gogh'));
@@ -233,14 +233,16 @@ console.log('task 2',changeName(artists, 8, 'Vincent Van Gogh'));
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 // */
-function getArtistByIndex(array, index) {
-    
-
-//     return `The artist at index ${this.index} is ${this.name}.`;
+function getArtistByIndex(i, arr) {
+    for (let i = 0; i < arr.length; i++) {
+      const element =arr[i];
+     
+    return element; 
+    }
 
   }
   
-// console.log(getArtistByIndex(artists, 0), `The artist at index ${this.index} is ${this.name}.`); //NEED ADDITIONAL ITEMS HERE TO PRODUCE DESIRED TEXT QUOTE;
+console.log('task 3', getArtistByIndex(artists, 0), `The artist at index ${0} is ${this.element}.`); //NEED ADDITIONAL ITEMS HERE TO PRODUCE DESIRED TEXT QUOTE;
 
 
   /**
@@ -248,11 +250,19 @@ function getArtistByIndex(array, index) {
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who lived in the 20th century (1900-2000) */
 
-function get20s(data){
+// function get20s(arr, element, string){
+//   newArr= []
+//     for (let i=0; i<arr.length; i++){
+//       if(arr.element[i] >= string){
+//         newArr.push(arr[i]);
+//       }
+//   }
+//   return newArr(element);
+// }
 
-  /* Code here */
+// console.log('task 4', get20s(artists, years,'1900'));
 
-}
+
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -265,14 +275,16 @@ function get20s(data){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
+function removeArtist(arr, index) {
+
+        arr.splice(index,1);
+      console.log('task 5', artists.length);
+        
+}
   
-  //use remove artist at selected index
+console.log(removeArtist(artists,0));
 
 
-    /* code here */
-  }
-  
   /**
 
 
@@ -290,11 +302,23 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-function addArtist(/* Code here */){
 
-    /* Code here */
 
-  }
+// function addArtist(array, id, name, years, genre, nationality, bio){
+
+//     array.push({id, name, years, genre, nationality, bio});
+//     return array;
+
+//   }
+
+// console.log(addArtist (artists), ("id": 20,
+// "name": "Ali Golji",
+// "years": "1981 - 0612",
+// "genre": "Web Design",
+// "nationality": "American",
+// "bio": "Yeah, I'll keep that in mind. Never? Uh? Hello, hello, anybody home? Think, McFly, think. I gotta have time to recopy it. Do you realize what would happen if I hand in my homework in your handwriting? I'd get kicked out of school. You wouldn't want that to happen would you, would you? Is she pretty?" ));
+
+
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
