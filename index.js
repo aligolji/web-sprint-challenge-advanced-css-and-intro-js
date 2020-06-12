@@ -233,9 +233,9 @@ console.log('task 2',changeName(artists, 8, 'Vincent Van Gogh'));
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 // */
-function getArtistByIndex(i, arr) {
-    for (let i = 0; i < arr.length; i++) {
-      const element =arr[i];
+function getArtistByIndex(arr, id) {
+    for (let id = 0; id < arr.length; id++) {
+      const element =arr[id];
      
     return element; 
     }
@@ -250,17 +250,17 @@ console.log('task 3', getArtistByIndex(artists, 0), `The artist at index ${0} is
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who lived in the 20th century (1900-2000) */
 
-// function get20s(arr, element, string){
-//   newArr= []
-//     for (let i=0; i<arr.length; i++){
-//       if(arr.element[i] >= string){
-//         newArr.push(arr[i]);
-//       }
-//   }
-//   return newArr(element);
-// }
+function get20s(arr, element, string){
+  newArr= []
+    for (let i=0; i<arr.length; i++){
+      if(arr.element[i] >= string){
+        newArr.push(arr[i]);
+      }
+  }
+  return newArr(element);
+}
 
-// console.log('task 4', get20s(artists, years,'1900'));
+console.log('task 4', get20s(artists, years,'1900'));
 
 
 
@@ -304,19 +304,19 @@ At the end, this function should console.log() the new array with information ad
 
 
 
-// function addArtist(array, id, name, years, genre, nationality, bio){
+function addArtist(array, id, name, years, genre, nationality, bio){
 
-//     array.push({id, name, years, genre, nationality, bio});
-//     return array;
+    array.push({id, name, years, genre, nationality, bio});
+    return array;
 
-//   }
+  }
 
-// console.log(addArtist (artists), ("id": 20,
-// "name": "Ali Golji",
-// "years": "1981 - 0612",
-// "genre": "Web Design",
-// "nationality": "American",
-// "bio": "Yeah, I'll keep that in mind. Never? Uh? Hello, hello, anybody home? Think, McFly, think. I gotta have time to recopy it. Do you realize what would happen if I hand in my homework in your handwriting? I'd get kicked out of school. You wouldn't want that to happen would you, would you? Is she pretty?" ));
+console.log('task', addArtist(array"id": 20,
+"name": "Ali Golji",
+"years": "1981 - 0612",
+"genre": "Web Design",
+"nationality": "American",
+"bio": "Yeah, I'll keep that in mind. Never? Uh? Hello, hello, anybody home? Think, McFly, think. I gotta have time to recopy it. Do you realize what would happen if I hand in my homework in your handwriting? I'd get kicked out of school. You wouldn't want that to happen would you, would you? Is she pretty?" ));
 
 
 
@@ -328,14 +328,19 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(arr){
+  newArr = []
 
-    //for loop
-  /* Code here */
+    for (let paintings in artists) {
+      if (paintings > 100 ) {
+        newArr.push(arr[i]);
+      }
+      return newArr;
+    }
 
 }
 
-
+console.log('task 7', lotsOfArt(artists));
 
 // 🎨🎨 STRETCH 🎨🎨//
 
