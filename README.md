@@ -22,11 +22,28 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. How would you describe preprocessing to someone new to CSS?
-2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+<!-- INTERVEIW QUESTIONS BELOW  -->
+
+1. How would you describe acessibility on the web to someone new to programming?
+
+Accessibility on the web allows for a wider population of web users to easily browse websites and utilize their features. There are many different screen sizes as well as mobile and desktop platforms that are used. Amongst users are those who have disabilities, some more challenging ones. Accessibility features will allow those who are blind, have color blindness, or have any of a list of other disabilities to be able to browse the web, complete online shopping, read news, and do other tasks.
+
+2. Talk about 3 different things you can do to ensure your website is accessible.
+
+Implementing resizable text and other responsive features on a website designed to fluidly transition pages from full size to mobile and across the range is one of a series of features that I can implement. Making a website accessible to work well with a screen reader is another feature that would benefit users. Ensuring my website is stiff functional without sound, or making sure that images have text descriptions attached to them that will show when the image doesn't are anothe couple of features that I can implement into my website to make it accessible. 
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+Variables are like labels for different bits of data that have different values and can be used by a program when needed. It can act as a placeholder in the program or formula and be replaced when necessary by the values that are needed under different circumstances.
+
 4. What is the purpose of using functions in code?
-5. What is JSON data?
+
+Functions are reusable codes that work together to run programs and machines. Similar to a formula in mathematics with variables which can be substituted with values that are needed to obtain a particular output, functions can receive different input under different needs. Functions can do the work of the same process being rewritten many times to operate varying input values.
+
+
+
+
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
