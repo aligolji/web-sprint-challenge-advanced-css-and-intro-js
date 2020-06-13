@@ -210,8 +210,8 @@ const artists = [
 
 (2) Bio of the third artist (2nd index) in the array */
 
-console.log('task 1-1', artists[0]);
-console.log('task 1-2', artists[2]);
+console.log('task 1-1', artists[0].name);
+console.log('task 1-2', artists[2].bio);
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
@@ -235,7 +235,7 @@ console.log('task 2',changeName(artists, 8, 'Vincent Van Gogh'));
 // */
 function getArtistByIndex(arr, index) {
 
-      return `The artist at index ${index} is ${arr}`;
+      return `The artist at index ${index} is ${arr[index].name}`;
   }
   
 console.log('task 3', getArtistByIndex(artists, 0)); //NEED ADDITIONAL ITEMS HERE TO PRODUCE DESIRED TEXT QUOTE;
@@ -246,17 +246,17 @@ console.log('task 3', getArtistByIndex(artists, 0)); //NEED ADDITIONAL ITEMS HER
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who lived in the 20th century (1900-2000) */
 
-function get20s(arr, string){
+function get20s(arr){
   newArr= []
     for (let i=0; i<arr.length; i++){
-      if(arr[i] >= string){
-        newArr.push(arr[i]);
+      if(arr[i].years.includes(" 19")){
+        newArr.push(arr[i].name);
       }
   }
   return newArr;
 }
 
-console.log('task 4', get20s(artists,'1900'));
+console.log('task 4', get20s(artists));
 
 
 
@@ -319,11 +319,10 @@ and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
 function lotsOfArt(arr){
-  howMany = artists.paintings;
-  newArr = [];
-
-      if (artists.paintings > 100 ) {
-        newArr.push(arr);
+   newArr = [];
+    for(i=0; i<arr.length; i++)
+      if (arr[i].paintings > 100 ) {
+        newArr.push(arr[i].name);
       }
       return newArr;
     // }
