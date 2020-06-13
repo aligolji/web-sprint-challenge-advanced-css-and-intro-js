@@ -18,6 +18,7 @@ border: 0;
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
+
 }
 /*GENERAL STYLES*/
 html{
@@ -67,15 +68,20 @@ img:hover {
 header{
     display:flex;
     justify-content: center;
+    
 }
 nav{
     width:30%;
     display:flex;
     justify-content:space-evenly;
     margin-top:5%;
+    
+    
 }
 nav a{
     color:#626262;
+    
+    
 }
 nav span{
     border-left:3px solid #626262;
@@ -86,9 +92,10 @@ nav span{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 .title-container div {	
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');	
     background-position: center;	
     color: white;	
     width:80%;
@@ -98,6 +105,8 @@ nav span{
     align-items: center;
     height:60vh;
     margin:5% 0;
+
+
 }	
 .title-container div:hover {	
     opacity: 80%;	
@@ -133,4 +142,20 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+
+
+/* QUERY AT MAX 500PX */
+@media (max-width:500px) {
+
+    nav a {
+        font-size: 1.5rem;
+        padding: 0 .5rem;
+    }
+
+    .artists-container {
+        border: 1px solid red;
+    }
+
 }

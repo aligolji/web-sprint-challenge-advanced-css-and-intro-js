@@ -234,15 +234,16 @@ console.log('task 2',changeName(artists, 8, 'Vincent Van Gogh'));
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 // */
 function getArtistByIndex(arr, id) {
+    
     for (let id = 0; id < arr.length; id++) {
-      const element =arr[id];
+
      
-    return element; 
+    return `The artist at index ${0} is ${arr.key}`; 
     }
 
   }
   
-console.log('task 3', getArtistByIndex(artists, 0), `The artist at index ${0} is ${this.element}.`); //NEED ADDITIONAL ITEMS HERE TO PRODUCE DESIRED TEXT QUOTE;
+console.log('task 3', getArtistByIndex(artists, 0)); //NEED ADDITIONAL ITEMS HERE TO PRODUCE DESIRED TEXT QUOTE;
 
 
   /**
@@ -250,17 +251,17 @@ console.log('task 3', getArtistByIndex(artists, 0), `The artist at index ${0} is
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who lived in the 20th century (1900-2000) */
 
-function get20s(arr, element, string){
-  newArr= []
-    for (let i=0; i<arr.length; i++){
-      if(arr.element[i] >= string){
-        newArr.push(arr[i]);
-      }
-  }
-  return newArr(element);
-}
+// function get20s(arr, string){
+//   newArr= []
+//     for (let i=0; i<arr.length; i++){
+//       if(arr.element[i] >= string){
+//         newArr.push(arr[i]);
+//       }
+//   }
+//   return newArr(element);
+// }
 
-console.log('task 4', get20s(artists, years,'1900'));
+// console.log('task 4', get20s(artists, years,'1900'));
 
 
 
@@ -278,11 +279,10 @@ console.log('task 4', get20s(artists, years,'1900'));
 function removeArtist(arr, index) {
 
         arr.splice(index,1);
-      console.log('task 5', artists.length);
-        
+       return artists.length; 
 }
   
-console.log(removeArtist(artists,0));
+console.log('task 5', removeArtist(artists,0));
 
 
   /**
@@ -302,21 +302,15 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
+let newArtist = [];
 
-
-function addArtist(array, id, name, years, genre, nationality, bio){
-
-    array.push({id, name, years, genre, nationality, bio});
-    return array;
+function addArtist(arr){
+      arr.push({newArtist});
+    return arr;
 
   }
 
-console.log('task', addArtist(array"id": 20,
-"name": "Ali Golji",
-"years": "1981 - 0612",
-"genre": "Web Design",
-"nationality": "American",
-"bio": "Yeah, I'll keep that in mind. Never? Uh? Hello, hello, anybody home? Think, McFly, think. I gotta have time to recopy it. Do you realize what would happen if I hand in my homework in your handwriting? I'd get kicked out of school. You wouldn't want that to happen would you, would you? Is she pretty?" ));
+console.log('task 6', addArtist(artists));
 
 
 
@@ -328,19 +322,19 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(arr){
-  newArr = []
+// function lotsOfArt(arr){
+//   newArr = []
 
-    for (let paintings in artists) {
-      if (paintings > 100 ) {
-        newArr.push(arr[i]);
-      }
-      return newArr;
-    }
+//     for (let paintings in artists) {
+//       if (paintings > 100 ) {
+//         newArr.push(arr[i]);
+//       }
+//       return newArr;
+//     }
 
-}
+// }
 
-console.log('task 7', lotsOfArt(artists));
+// console.log('task 7', lotsOfArt(artists));
 
 // 🎨🎨 STRETCH 🎨🎨//
 
@@ -382,3 +376,6 @@ function randomize(/* Code here */){
 
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
+
+
+
