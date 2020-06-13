@@ -322,7 +322,6 @@ function lotsOfArt(arr){
   howMany = artists.paintings;
   newArr = [];
 
-    // for (let paintings in artists) {
       if (artists.paintings > 100 ) {
         newArr.push(arr);
       }
