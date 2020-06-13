@@ -233,14 +233,9 @@ console.log('task 2',changeName(artists, 8, 'Vincent Van Gogh'));
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 // */
-function getArtistByIndex(arr, id) {
-    
-    for (let id = 0; id < arr.length; id++) {
+function getArtistByIndex(arr, index) {
 
-     
-    return `The artist at index ${0} is ${arr.key}`; 
-    }
-
+      return `The artist at index ${index} is ${arr}`;
   }
   
 console.log('task 3', getArtistByIndex(artists, 0)); //NEED ADDITIONAL ITEMS HERE TO PRODUCE DESIRED TEXT QUOTE;
@@ -251,17 +246,17 @@ console.log('task 3', getArtistByIndex(artists, 0)); //NEED ADDITIONAL ITEMS HER
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who lived in the 20th century (1900-2000) */
 
-// function get20s(arr, string){
-//   newArr= []
-//     for (let i=0; i<arr.length; i++){
-//       if(arr.element[i] >= string){
-//         newArr.push(arr[i]);
-//       }
-//   }
-//   return newArr(element);
-// }
+function get20s(arr, string){
+  newArr= []
+    for (let i=0; i<arr.length; i++){
+      if(arr[i] >= string){
+        newArr.push(arr[i]);
+      }
+  }
+  return newArr;
+}
 
-// console.log('task 4', get20s(artists, years,'1900'));
+console.log('task 4', get20s(artists,'1900'));
 
 
 
@@ -302,10 +297,11 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-let newArtist = [];
+
 
 function addArtist(arr){
-      arr.push({newArtist});
+      arr.push({id:20, name:'Ali Golji', years:'1981-current', genre: "Web Design",
+      nationality: "American", bio: "Yeah, I'll keep that in mind. Never? Uh? Hello, hello, anybody home? Think, McFly, think. I gotta have time to recopy it. Do you realize what would happen if I hand in my homework in your handwriting? I'd get kicked out of school. You wouldn't want that to happen would you, would you? Is she pretty?", wikipedia: "no entries.", designs: "3"});
     return arr;
 
   }
@@ -322,19 +318,20 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-// function lotsOfArt(arr){
-//   newArr = []
+function lotsOfArt(arr){
+  howMany = artists.paintings;
+  newArr = [];
 
-//     for (let paintings in artists) {
-//       if (paintings > 100 ) {
-//         newArr.push(arr[i]);
-//       }
-//       return newArr;
-//     }
+    // for (let paintings in artists) {
+      if (artists.paintings > 100 ) {
+        newArr.push(arr);
+      }
+      return newArr;
+    // }
 
-// }
+}
 
-// console.log('task 7', lotsOfArt(artists));
+console.log('task 7', lotsOfArt(artists));
 
 // 🎨🎨 STRETCH 🎨🎨//
 
